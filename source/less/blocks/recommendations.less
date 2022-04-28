@@ -1,0 +1,48 @@
+.advantages__recommendations {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.recommendation-list {
+  margin: 25px 18px 52px;
+  padding: 0;
+  list-style-type: none;
+  background-color: #ffffff;
+}
+
+.recommendation-item__title {
+  font-family: @font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.recommendation-item__text {
+  font-family: @font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__recommendations {
+    width: 768px;
+  }
+
+  .recommendation-list {
+    display: grid;
+    grid-template-columns: 256px 256px 256px;
+    outline: 5px solid rgba(0, 255, 0, 0.8);
+    outline-offset: -5px;
+  }
+
+  .recommendation-item {
+    outline: 5px solid rgba(0, 255, 0, 0.8);
+    outline-offset: -5px;
+  }
+}
