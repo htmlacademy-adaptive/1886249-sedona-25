@@ -1,4 +1,4 @@
-.advantages__recommendations {
+.recommendations {
   width: 320px;
   margin: 0 auto;
 }
@@ -30,19 +30,57 @@
 }
 
 @media (min-width: @tablet-width) {
-  .advantages__recommendations {
+  .recommendations {
     width: 768px;
+    margin: 0;
+    padding: 0;
   }
 
   .recommendation-list {
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: 256px 256px 256px;
-    outline: 5px solid rgba(0, 255, 0, 0.8);
-    outline-offset: -5px;
   }
 
   .recommendation-item {
-    outline: 5px solid rgba(0, 255, 0, 0.8);
-    outline-offset: -5px;
+    margin: 0 0 59px 0;
+    padding: 0;
+  }
+
+  .recommendation-item__house-icon {
+    width: 77px;
+    height: 73px;
+    display: block;
+    margin: 60px auto 27px;
+    padding: 0;
+  }
+
+  .recommendation-item__burger-icon {
+    width: 78px;
+    height: 69px;
+    display: block;
+    margin: 64px auto 28px;
+  }
+
+  .recommendation-item__souvenir-icon {
+    width: 65px;
+    height: 77px;
+    display: block;
+    margin: 58px auto 27px;
+  }
+
+  .recommendation-item__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 27px;
+  }
+
+  .recommendation-item__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
   }
 }

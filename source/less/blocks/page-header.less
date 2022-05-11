@@ -2,6 +2,14 @@
   background-color: @white;
 }
 
+.page-header__navigation {
+  display: flex;
+  width: 320px;
+  margin: 0 auto;
+  height: 56px;
+  padding: 0;
+}
+
 .page-header__logo {
   display: block;
   height: 96px;
@@ -10,16 +18,8 @@
   margin-top: 0;
 }
 
-.page-header .container {
-  width: 320px;
-  display: flex;
-  margin: 0 auto;
-  height: 56px;
-  padding: 0;
-}
-
 @media (min-width: @tablet-width) {
-  .page-header .container {
+  .page-header {
     width: 768px;
   }
 }
