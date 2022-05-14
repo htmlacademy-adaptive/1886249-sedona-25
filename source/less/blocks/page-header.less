@@ -1,8 +1,31 @@
 .page-header {
-  background-color: #ffffff;
+  background-color: @white;
+}
+
+.page-header__navigation {
+  display: flex;
+  width: 320px;
+  margin: 0 auto;
+  height: 56px;
+  padding: 0;
 }
 
 .page-header__logo {
   display: block;
+  height: 96px;
+  margin-right: 25px;
   margin-left: 67px;
+  margin-top: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
 }

@@ -1,9 +1,59 @@
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .page-footer__hashteg-link {
-  font-family: @font-feature-values;
+  display: block;
+  font-family: @font;
   color: #000000;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.page-footer__copyright-text {
+  display: block;
+  color: #000000;
+  font-family: @font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  width: 121px;
+}
+
+.page-footer__html-link {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: 768px;
+    height: 120px;
+    outline-offset: -3px;
+  }
+
+  .footer__container {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    outline: 5px solid rgba(0, 255, 0, 0.8);
+    outline-offset: -5px;
+  }
+
+  .page-footer__copyright-text {
+    outline: 5px solid rgba(0, 255, 0, 0.8);
+    outline-offset: -5px;
+  }
 }

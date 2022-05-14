@@ -1,5 +1,5 @@
-.searching-hotel-button {
-  font-family: @font-feature-values;
+.button__searching-hotel-button {
+  font-family: @font;
   background-color: #81b3d2;
   color: #ffffff;
   text-decoration: none;
@@ -9,5 +9,13 @@
   text-align: center;
   text-transform: uppercase;
   padding: 16px 49px;
-  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 49px;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .button__searching-hotel-button {
+    width: 458px;
+  }
 }

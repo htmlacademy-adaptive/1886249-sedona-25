@@ -2,25 +2,27 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
       <div class="container">
+        <div class="page-header__navigation">
           <img class="page-header__logo" src="img/logo.svg" width="185" height="96" alt="sedona-logo">
-        <nav class="page-header__navigation">
-          <button class="button button-navigation" type="button">
-            <span class="visually-hidden">открыть меню</span>
-          </button>
-          <!--СКРЫТЬ НАВИГАЦИЮ-->
-          <ul class="navigation-list">
-            <li class="navigation-list__item"><a href="#">главная</a></li>
-            <li class="navigation-list__item"><a href="#">фото и видео</a></li>
-            <li class="navigation-list__item"><a href="#">форма отзыва</a></li>
-            <li class="navigation-list__item"><a href="#">html academy</a></li>
-          </ul>
-        </nav>
+            <button class="button button-navigation" type="button"><img src="./img/icon-menu.svg.svg" width="23" height="22">
+              <span class="visually-hidden">открыть меню</span>
+            </button>
+            <div class="visually-hidden">
+            <ul class="navigation-list">
+              <li class="navigation-list__item"><a href="#">главная</a></li>
+              <li class="navigation-list__item"><a href="#">фото и видео</a></li>
+              <li class="navigation-list__item"><a href="#">форма отзыва</a></li>
+              <li class="navigation-list__item"><a href="#">html academy</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="page-main">
@@ -37,71 +39,73 @@
             <h2 class="advantages__introduction-title">Седона — небольшой городок в аризоне, заслуживающий большего!</p>
             <p class="advantages__introduction-text">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
           </div>
-          <div class="advantages__item">
-            <h2 class="advantages__item-title">настоящий городок</h2>
-            <p class="advantages__number">— №1 —</p>
-            <p class="advantages__item-text">седона не аттракцион для туристов, там течёт своя жизнь</p>
-          </div>
-          <div class="advantages__image"><img src="img/Frame4.jpg" width="320" height="260" alt="photo-of-sedona"></div>
-          <div class="advantages__recommendations">
+           <div class="advantages__flex-wrapper">
+            <div class="advantages__item advantages__item__number-one">
+              <h2 class="advantages__item-title">настоящий городок</h2>
+              <p class="advantages__number">— №1 —</p>
+              <p class="advantages__item-text">седона не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <img  class="advantages__image-foto" src="img/Frame4.jpg" alt="photo-of-sedona">
+           </div>
+           <div class="recommendations">
             <ul class="recommendation-list">
                <li class="recommendation-item">
-                   <img src="#" width="#" height="#" alt="#">
+                   <img class="recommendation-item__house-icon" src="./img/house.svg" width="40px" height="40px" alt="house-icon">
                    <h2 class="recommendation-item__title">жилье</h2>
                    <p class="recommendation-item__text">рекомендуем пожить <br>в настоящем мотеле, все как в <br> кино!</p>
                </li>
                <li class="recommendation-item">
-                  <img src="#" width="#" height="#" alt="#">
+                  <img class="recommendation-item__burger-icon" src="./img/burger.svg" width="40" height="40" alt="burger-icon">
                   <h2 class="recommendation-item__title">еда</h2>
                   <p class="recommendation-item__text">всегда заказывайте фирменный <br> бургер, вы не разочаруетесь!</p>
                </li>
                <li class="recommendation-item">
-                    <img src="#" width="#" height="#" alt="#">
+                    <img class="recommendation-item__souvenir-icon" src="./img/souvenir.svg" width="40" height="40" alt="souvenir-icon">
                     <h2 class="recommendation-item__title">сувениры</h2>
                     <p class="recommendation-item__text">не только китайского, но и <br> местного производства!</p>
                 </li>
               </ul>
             </div>
-           <div class="advantages__item">
+          <div class="advantages__flex-wrapper">
+           <img class="advantages__image-foto" src="img/photo-bridge.jpg" width="320" height="260" alt="devil's-bridge">
+           <div class="advantages__item advantages__item__number-two">
             <h2 class="advantages__item-title">там есть мост дьявола</h2>
             <p>— №2 —</p>
             <p class="advantages__item-text">да, по нему можно пройти! Если вы осмелитесь, конечно</p>
            </div>
-           <div class="advantages__image"><img src="img/photo-bridge.jpg" width="320" height="260" alt="devil's-bridge"></div>
+          </div>
            <ul class="advantages__advantages-list">
-             <li class="advantages-item">
+             <li class="advantages-item advantages-item-number-three">
               <h2 class="advantages-item__advantage-title">небольшая площадь</h2>
               <p class="advantages-item__advantage-number">— №3 —</p>
               <p class="advantages-item__advantage-text">все интересные места находятся очень близко</p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item advantages-item-number-four">
               <h2 class="advantages-item__advantage-title">красивая дорога</h2>
               <p class="advantages-item__advantage-number">— №4 —</p>
               <p class="advantages-item__advantage-text">ехать в седону из лас-вегаса совсем не скучно!</p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item advantages-item-number-five">
               <h2 class="advantages-item__advantage-title">мало туристов</h2>
               <p class="advantages-item__advantage-number">— №5 —</p>
-              <p class="advantages-item__advantage-text">большинство едет в гранд каньони толпится там</p>
+              <p class="advantages-item__advantage-text">большинство едет в гранд каньон и толпится там</p>
             </li>
           </ul>
         </div>
+      </div>
       </section>
       <section class="searching-hotel">
         <div class="container">
           <h1 class="searching-hotel__title">заинтересовались?</h1>
           <p class="searching-hotel__text">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <a class="button searching-hotel-button" href="#">найти гостиницу</a>
-          <img class="map" src="img/map-mobile.jpg.svg" width="320" height="350" alt="map">
+          <a class="button__searching-hotel-button" href="#">найти гостиницу</a>
+          <img class="searching-hotel__map" src="img/map-mobile.jpg.svg" alt="map">
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container">
-        <div class="page-footer__hashteg">
+        <div class="container footer__container">
           <a class="page-footer__hashteg-link">#visitsedona</a>
-        </div>
-        <div class="page-footer__social-media">
           <ul class="sosial-media-list">
             <li class="sosial-media-item">
               <a href="#"></a>
@@ -113,11 +117,10 @@
               <a href="#"></a>
             </li>
           </ul>
-        </div>
-        <div class="page-footer__copyright">
-          <span class="copyright">разработано</span>
-          <a href><img src="#" width="#" height="#" alt="#"></a>
-        </div>
+         <div class="page-footer__copyright">
+          <span class="page-footer__copyright-text">разработано</span>
+          <a  class="page-footer__html-link" href><img src="./img/htmlacademy.svg.svg" width="27" height="34" alt="logo-html"></a>
+         </div>
       </div>
     </footer>
   </body>
