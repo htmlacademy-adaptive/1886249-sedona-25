@@ -11,14 +11,32 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  margin: 28px 77px 34px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .page-footer__copyright {
   display: flex;
-  margin-left: 80px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.page-footer__copyright-text {
+  display: block;
 }
 
 .page-footer__html-link {
   display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: 768px;
+    outline: 5px solid rgba(255, 0, 0, 0.8);
+    outline-offset: -3px;
+  }
+
+  .footer__container {
+    display: flex;
+  }
 }
